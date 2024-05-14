@@ -1,2 +1,2 @@
-- verb: Look at and comprehend the meaning by mentally interpreting the characters or symbols of which it is composed. (Example: It's the best novel I've ever read.)read:
-- verb: Look at and comprehend the meaning by mentally interpreting the characters or symbols of which it is composed. (Example: It's the best novel I've ever read)
+read:
+- verb: Look at and comprehend the meaning by mentally interpreting the characters or symbols of which it is composed. (Example: It's the best novel I've ever read.)
