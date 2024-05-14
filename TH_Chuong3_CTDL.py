@@ -52,25 +52,17 @@ class DaThuc:
 
     def Them(self, heso, somu):
         new_node = Node(heso, somu)
-
-        # Nếu danh sách đang trống
         if self.Head is None:
             self.Head = new_node
             return
-
-        # Nếu số mũ của số hạng mới lớn hơn số mũ của số hạng đầu tiên
         if somu > self.Head.SoMu:
             new_node.KeTiep = self.Head
             self.Head = new_node
             return
 
         current = self.Head
-
-        # Duyệt qua danh sách để tìm vị trí chính xác để chèn số hạng mới
         while current.KeTiep is not None and current.KeTiep.SoMu > somu:
             current = current.KeTiep
-
-        # Chèn số hạng mới vào vị trí phù hợp
         new_node.KeTiep = current.KeTiep
         current.KeTiep = new_node
 
@@ -103,7 +95,6 @@ class DaThuc:
             current = current.KeTiep
         print()
 
-# Hàm main để kiểm tra
 if __name__ == "__main__":
     dathuc = DaThuc()
     dathuc.Them(3, 2)
@@ -134,12 +125,10 @@ class DaThuc:
     def Them(self, heso, somu):
         new_node = Node(heso, somu)
 
-        # Nếu danh sách đang trống
         if self.Head is None:
             self.Head = new_node
             return
 
-        # Nếu số mũ của số hạng mới lớn hơn số mũ của số hạng đầu tiên
         if somu > self.Head.SoMu:
             new_node.KeTiep = self.Head
             self.Head = new_node
@@ -147,11 +136,9 @@ class DaThuc:
 
         current = self.Head
 
-        # Duyệt qua danh sách để tìm vị trí chính xác để chèn số hạng mới
         while current.KeTiep is not None and current.KeTiep.SoMu > somu:
             current = current.KeTiep
 
-        # Chèn số hạng mới vào vị trí phù hợp
         new_node.KeTiep = current.KeTiep
         current.KeTiep = new_node
 
@@ -211,7 +198,6 @@ class DaThuc:
             current = current.KeTiep
         print()
 
-# Hàm main để kiểm tra
 if __name__ == "__main__":
     dathuc1 = DaThuc()
     dathuc1.Them(3, 2)
@@ -246,12 +232,10 @@ class DaThuc:
     def Them(self, heso, somu):
         new_node = Node(heso, somu)
 
-        # Nếu danh sách đang trống
         if self.Head is None:
             self.Head = new_node
             return
 
-        # Nếu số mũ của số hạng mới lớn hơn số mũ của số hạng đầu tiên
         if somu > self.Head.SoMu:
             new_node.KeTiep = self.Head
             self.Head = new_node
@@ -259,11 +243,9 @@ class DaThuc:
 
         current = self.Head
 
-        # Duyệt qua danh sách để tìm vị trí chính xác để chèn số hạng mới
         while current.KeTiep is not None and current.KeTiep.SoMu > somu:
             current = current.KeTiep
 
-        # Chèn số hạng mới vào vị trí phù hợp
         new_node.KeTiep = current.KeTiep
         current.KeTiep = new_node
 
@@ -302,7 +284,6 @@ class DaThuc:
             current = current.KeTiep
         print()
 
-# Hàm main để kiểm tra
 if __name__ == "__main__":
     dathuc = DaThuc()
     dathuc.Them(3, 2)
@@ -330,12 +311,10 @@ class DaThuc:
     def Them(self, heso, somu):
         new_node = Node(heso, somu)
 
-        # Nếu danh sách đang trống
         if self.Head is None:
             self.Head = new_node
             return
 
-        # Nếu số mũ của số hạng mới lớn hơn số mũ của số hạng đầu tiên
         if somu > self.Head.SoMu:
             new_node.KeTiep = self.Head
             self.Head = new_node
@@ -343,11 +322,9 @@ class DaThuc:
 
         current = self.Head
 
-        # Duyệt qua danh sách để tìm vị trí chính xác để chèn số hạng mới
         while current.KeTiep is not None and current.KeTiep.SoMu > somu:
             current = current.KeTiep
 
-        # Chèn số hạng mới vào vị trí phù hợp
         new_node.KeTiep = current.KeTiep
         current.KeTiep = new_node
 
@@ -398,7 +375,6 @@ class DaThuc:
             current = current.KeTiep
         print()
 
-# Hàm main để kiểm tra
 if __name__ == "__main__":
     dathuc1 = DaThuc()
     dathuc1.Them(3, 2)
@@ -433,12 +409,10 @@ class DaThuc:
     def Them(self, heso, somu):
         new_node = Node(heso, somu)
 
-        # Nếu danh sách đang trống
         if self.Head is None:
             self.Head = new_node
             return
 
-        # Nếu số mũ của số hạng mới lớn hơn số mũ của số hạng đầu tiên
         if somu > self.Head.SoMu:
             new_node.KeTiep = self.Head
             self.Head = new_node
@@ -446,11 +420,9 @@ class DaThuc:
 
         current = self.Head
 
-        # Duyệt qua danh sách để tìm vị trí chính xác để chèn số hạng mới
         while current.KeTiep is not None and current.KeTiep.SoMu > somu:
             current = current.KeTiep
 
-        # Chèn số hạng mới vào vị trí phù hợp
         new_node.KeTiep = current.KeTiep
         current.KeTiep = new_node
 
@@ -493,7 +465,6 @@ class DaThuc:
             current = current.KeTiep
         print()
 
-# Hàm main để kiểm tra
 if __name__ == "__main__":
     dathuc = DaThuc()
     dathuc.Them(3, 2)

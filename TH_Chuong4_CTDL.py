@@ -224,11 +224,10 @@ if __name__ == "__main__":
 class HanoiTower:
     def __init__(self, n):
         self.n = n
-        self.tower1 = list(range(n, 0, -1))  # Tháp ban đầu
-        self.tower2 = []  # Tháp trung gian
-        self.tower3 = []  # Tháp đích đến
+        self.tower1 = list(range(n, 0, -1))
+        self.tower2 = []
+        self.tower3 = []
 
-    # Phương thức di chuyển tháp từ vị trí 1 đến vị trí 3 thông qua vị trí trung gian 2
     def move(self, n, from_tower, to_tower, aux_tower):
         if n == 1:
             disk = from_tower.pop()
@@ -239,12 +238,10 @@ class HanoiTower:
             self.move(1, from_tower, to_tower, aux_tower)
             self.move(n-1, aux_tower, to_tower, from_tower)
 
-    # Phương thức để thực hiện di chuyển tháp
     def move_towers(self):
         self.move(self.n, self.tower1, self.tower3, self.tower2)
 
-# Hàm main để kiểm tra
 if __name__ == "__main__":
-    n = 3  # Số tầng của tháp
+    n = 3
     hanoi = HanoiTower(n)
     hanoi.move_towers()
